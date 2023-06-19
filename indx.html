@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> JB | Conversor de Unidade</title>
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="shortcut icon" href="./src/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+  <div class="conatiner">
+    <h1>Conversor de Unidades</h1>
+
+    <div class="input-group">
+      <label for="input">Digite a quantidade</label>
+      <input type="number" id="input" name="input" placeholder="0">
+    </div>
+    <!--Conversão de:-->
+    <div class="input-group">
+      <label for="from">De:</label>
+      <select name="from" id="from">
+        <option value="m">Metro(s)</option>
+        <option value="km">Quilômetros(s)</option>
+        <option value="cm">Centímetro(s)</option>
+        <option value="mm">Milímetro(s)</option>
+      </select>
+    </div>
+    <!--Convertido para:-->
+    <div class="input-group">
+      <label for="to">Para:</label>
+      <select name="to" id="to">
+        <option value="m">Metro(s)</option>
+        <option value="km">Quilômetros(s)</option>
+        <option value="cm">Centímetro(s)</option>
+        <option value="mm">Milímetro(s)</option>
+      </select>
+    </div>
+    <!--Resultado-->
+    <button id="convert-btn">Converter</button>
+    <div class="output-goup">
+      <label for="output">Resultado</label>
+      <input type="text" id="output" readonly>
+    </div>
+    <div id="message"></div>
+
+  </div>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
