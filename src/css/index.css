@@ -1,0 +1,87 @@
+:root {
+  --flex: flex;
+  --items-center: center;
+  --m-b-5: 1.5rem;
+  --m-1-2: 1.2rem;
+  --p-08: 0.8rem;
+  --radius-5: 5px;
+  --font-s-1: 1rem;
+  --font-s-0-8: 0.8rem;
+  --color-white: #fff;
+  --color-green: #93a42a;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: Arial;
+}
+
+body {
+  background-color: #d2d2d2;
+  display: var(--flex);
+  align-items: var(--items-center);
+  justify-content: var(--items-center);
+  height: 100vh;
+}
+
+.container {
+  background-color: #58afb8;
+  background-color: #005f6b;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: var(--m-b-5);
+  width: 400px;
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: var(--m-b-5);
+  text-align: var(--items-center);
+}
+
+.input-group,
+.output-goup {
+  display: var(--flex);
+  flex-direction: column;
+  margin-bottom: var(--m-b-5);
+}
+.input-group label,
+.output-goup label {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+select,
+input {
+  padding: var(--p-08);
+  border-radius: 5px;
+  border: none;
+  font-size: var(--font-s-1);
+  background-color: #eee;
+}
+
+button {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-5);
+  cursor: pointer;
+  font-size: var(--font-s-1);
+  padding: var(--p-08) var(--m-1-2);
+  opacity: 0.7;
+  transition: 0.4s;
+}
+button:hover {
+  opacity: 1;
+}
+
+.output-goup {
+  margin-top: var(--m-1-2);
+}
+#message {
+  font-size: var(--font-s-0-8);
+  color: #00dffc;
+  margin-top: 0.7rem;
+  text-align: var(--items-center);
+}
