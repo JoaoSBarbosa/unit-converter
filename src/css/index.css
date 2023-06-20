@@ -84,7 +84,7 @@ body {
 }
 @media (max-width: 420px) {
   .section-convert {
-    height: calc(100vh - 220px);
+    height: calc(100vh - 150px);
   }
   .container {
     width: initial;
