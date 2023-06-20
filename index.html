@@ -7,48 +7,87 @@
   <title> JB | Conversor de Unidade</title>
   <link rel="stylesheet" href="./src/css/index.css">
   <link rel="shortcut icon" href="./src/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
   <script src="./src/js/index.js" defer></script>
 
 </head>
 
 <body>
+  <header id="header">
 
-  <div class="container">
-    <h1>Conversor de Unidades</h1>
+    <a href="./" id="logo">
+      <img src="./src/img/converter.png" alt=""></a>
 
-    <div class="input-group">
-      <label for="input">Digite a quantidade</label>
-      <input type="number" id="input" name="input" placeholder="0">
-    </div>
-    <!--Conversão de:-->
-    <div class="input-group">
-      <label for="from">De:</label>
-      <select name="from" id="from">
-        <option value="m">Metro(s)</option>
-        <option value="km">Quilômetros(s)</option>
-        <option value="cm">Centímetro(s)</option>
-        <option value="mm">Milímetro(s)</option>
-      </select>
-    </div>
-    <!--Convertido para:-->
-    <div class="input-group">
-      <label for="to">Para:</label>
-      <select name="to" id="to">
-        <option value="m">Metro(s)</option>
-        <option value="km">Quilômetros(s)</option>
-        <option value="cm">Centímetro(s)</option>
-        <option value="mm">Milímetro(s)</option>
-      </select>
-    </div>
-    <!--Resultado-->
-    <button id="convert-btn">Converter</button>
-    <div class="output-goup">
-      <label for="output">Resultado</label>
-      <input type="text" id="output" readonly>
-    </div>
-    <div id="message"></div>
+    <nav id="nav">
 
-  </div>
+      <button id="btn-mobile">
+        <span id="hamburguer"></span>
+      </button>
+
+      <ul class="menu">
+        <li>
+          <a href="https://github.com/JoaoSBarbosa?tab=repositories" target="_blank">
+            Projetos
+          </a>
+        </li>
+        <li>
+          <a href="https://joaosbarbosa.com.br/" target="_blank">
+            Portfólio
+          </a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/devjbarbosa" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-convert">
+    <div class="container">
+      <h1>Conversor de Unidades</h1>
+
+      <div class="input-group">
+        <label for="input">Digite a quantidade</label>
+        <input type="number" id="input" name="input" placeholder="0">
+      </div>
+      <!--Conversão de:-->
+      <div class="input-group">
+        <label for="from">De:</label>
+        <select name="from" id="from">
+          <option value="m">Metro(s)</option>
+          <option value="km">Quilômetros(s)</option>
+          <option value="cm">Centímetro(s)</option>
+          <option value="mm">Milímetro(s)</option>
+        </select>
+      </div>
+      <!--Convertido para:-->
+      <div class="input-group">
+        <label for="to">Para:</label>
+        <select name="to" id="to">
+          <option value="m">Metro(s)</option>
+          <option value="km">Quilômetro(s)</option>
+          <option value="cm">Centímetro(s)</option>
+          <option value="mm">Milímetro(s)</option>
+        </select>
+      </div>
+      <!--Resultado-->
+      <button id="convert-btn">Converter</button>
+      <div class="output-goup">
+        <label for="output">Resultado</label>
+        <input type="text" id="output" readonly>
+      </div>
+      <div id="message"></div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Developed by <a href="">João Barbosa</a></p>
+    <div class="dev-icons">
+      <a href="https://github.com/JoaoSBarbosa" target="_blank"><i class="devicon-github-original"></i></a>
+      <a href="https://www.linkedin.com/in/devjbarbosa" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
